@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>天下天</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/style-1.css">
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	
+</head>
+<body>
+	<div id="header">
+		<div class="navOne">
+			<img src="images/icon2.png" alt="">
+			<span>ggstian@163.com</span>
+			<img src="images/icon.png" alt="">
+			<span>13161371798</span>
+			<div id="song">
+				<audio id="mmm" src="music/枯藤老树昏鸦.mp3" width="650" height="30" autoplay loop controls>你的浏览器不支持音频</audio>
+				<p id="mus">切歌</p>
+				
+				<ul id="lyric">
+					<li>枯藤老树昏鸦</li>
+					<li>I Do</li>
+					<li>相爱</li>
+					<li>Let's not fall in love</li>
+				</ul>
+			</div>
+		</div>
+		<div id="kong"></div>
+		<p id="oneP">何其荣幸</p>
+		<p id="twoP">醉卧美人膝</p>
+		<div class="aa"><a href="" class="but">颇为舒适</a></div>>
+		<div id="wrap">
+			<div id="main">
+				<div id="con1">
+					<p>
+						神仙未必慈悲为怀 妖魔也未必天性邪恶
+					</p>
+					<p>
+						十步杀一人 千里不留行 事了拂衣去 深藏功与名
+					</p>
+					<p>
+						抚养性命守虚无 恬淡无为何思虑
+					</p>
+					<p>
+						生命不息 战斗不止
+					</p>
+					<p>
+						醒掌天下权 醉卧美人膝
+					</p>
+				</div>
+			</div>
+			<ul id="num">
+				<li class="show">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+	</div>
+	<div id="con">
+		<div class="me">
+			<!-- count particles -->
+			<div class="count-particles">
+			  <span class="js-count-particles">--</span> particles
+			</div>
+
+			<!-- particles.js container -->
+			<div id="particles-js">
+				<p>且弑天下</p>
+				<p>
+				作为一个男人，我自然要保家卫国。国家的崛起，就是我的理想。国家要我生，我就生，国家要我牺牲，我义无反顾。我的理想只为人民，只为国家存在，国家是我的血液，国家是我的最爱。不求风骚动天下，但求猥琐动世人！
+				</p>
+				<p>
+				年轻人 别再最能吃苦的年纪选择安逸 锦瑟流年 花开花落 岁月蹉跎匆匆过 而恰如同学少年 在最能学习的年纪你选择安逸 自是年少 却韶华倾负 再无年少之时
+				</p>
+				<div class="shu1">金鳞岂是池中物</div>
+				<div class="shu2">一遇风云便化龙</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="floot"></div>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/tween.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+$("#song").mouseover(function (){
+	$("#lyric").show()
+})
+$("#song").mouseleave(function (){
+	$("#lyric").hide()
+})
+
+$("#mus").on("click",function (){
+	if ($("#mmm")[0].paused){ 
+        $("#mmm")[0].play(); 
+        // music_btn.src = 'play.gif'; 
+    }else{
+    	$("#mmm")[0].pause();
+    }
+})
+$("#lyric").on("click","li",function (){
+	console.log($(this).text())
+	$(".mmm")[0].play();
+	$(".mmm").attr("src","music/"+$(this).text()+".mp3");
+	$(".mmm")[0].play();
+})
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+console.log($("#header"))
+  console.log($("#header").attr("width"))
+		
+</script>
+</body>
+</html>
