@@ -87,7 +87,7 @@ li{list-style:none}
   position: relative; 
 }
 #particles-js p:nth-child(1){
-  width:850px;
+  width:63%;
   text-align:center;
   font-size:36px;
   margin: 0 0 0 150px;
@@ -96,17 +96,26 @@ li{list-style:none}
   color:#E066FF;
 }
 #particles-js p:nth-child(2){
-  width:850px;
+  width:63%;
   text-align:justify;
   text-indent:2em;
   font-size:16px;
   margin: 30px 0 0 150px;
 }
 #particles-js p:nth-child(3){
-  width:850px;
+  width:63%;
   text-align:justify;
   text-indent:2em;
   font-size:16px;
+  margin: 0 0 0 150px;
+}
+#particles-js p:nth-child(4){
+  width:850px;
+  height:200px;
+  text-align: center;
+  font-size:56px;
+  color:yellow;
+  line-height:200px;
   margin: 0 0 0 150px;
 }
 .shu1{
@@ -115,8 +124,8 @@ li{list-style:none}
   font-size:30px;
   color:#E066FF;
   position: absolute;
-  left:90px;
-  top:30px;
+  left:6.67%;
+  top:7.5%;
   font-weight:bold;
 }
 .shu2{
@@ -125,7 +134,7 @@ li{list-style:none}
   font-size:30px;
   color:#E066FF;
   position: absolute;
-  right:290px;
-  top:30px;
+  right:21.5%;
+  top:7.5%;
   font-weight:bold;
 }
