@@ -5,12 +5,13 @@
 	<title>天下天</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<link rel="stylesheet" media="screen" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style-1.css">
 	
 	
 </head>
 <body>
+	
 	<div id="header">
 		<div class="navOne">
 			<img src="images/icon2.png" alt="">
@@ -85,8 +86,7 @@
 			</div>
 
 		</div>
-	</div>
-	<div class="work">
+		<div class="work">
 			<p>My Work Achievements</p>
 			<div class="box">
 				<img src="images/01.jpg" alt="">
@@ -103,6 +103,8 @@
 				<img src="images/12.jpg" alt="">
 			</div>
 		</div>
+	</div>
+	
 	<div id="floot"></div>
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
@@ -129,9 +131,9 @@ $("#mus").on("click",function (){
 })
 $("#lyric").on("click","li",function (){
 	console.log($(this).text())
-	$(".mmm")[0].play();
-	$(".mmm").attr("src","music/"+$(this).text()+".mp3");
-	$(".mmm")[0].play();
+	$("#mmm")[0].play();
+	$("#mmm").attr("src","music/"+$(this).text()+".mp3");
+	$("#mmm")[0].play();
 })
 
   var count_particles, stats, update;
